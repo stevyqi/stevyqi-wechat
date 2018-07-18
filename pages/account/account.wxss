@@ -1,0 +1,35 @@
+.account-summary{
+  position: fixed;
+  top:0;
+  padding: 40rpx;
+  text-align: center;
+  width: 100%;
+  background-color: #ffffff;
+}
+.account-list {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 40rpx;
+  margin: 100rpx 0 200rpx 0;
+}
+.account-item {
+  margin: 10rpx;
+  width: 95%;
+  border-bottom: 1rpx solid #eee;
+}
+.account-name {
+  float: left; 
+}
+.account-value {
+  float: right; 
+}
+.add-account {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20rpx 0;
+  color: #328cc1;
+  background-color: #ffffff;
+}

@@ -1,0 +1,20 @@
+<!--account.wxml-->
+<view class="container">
+  <view class="account-summary">
+    <text class="add-account-btn" bindtap="addAccountTap">合计金额：{{totalAmount}}</text>
+  </view>
+  <view class="account-list">
+    <block wx:for="{{accounts}}" wx:key="unique" wx:for-item="account">
+      <div class="account-item"> 
+        <text class="account-name">{{account.name}}</text> <text class="account-value">{{account.value}}</text>
+      </div>
+    </block>
+  </view>
+  <view class="add-account">
+  <!--
+  -->
+    <input bindinput="changeName" placeholder="输入项目" value="{{accountName}}" confirm-type="next"></input>
+    <input bindinput="changeValue" placeholder="输入金额" value="{{accountValue}}" type="digit" confirm-type="done"></input>
+    <text class="add-account-btn" bindtap="addAccountTap">＋ 记一笔</text>
+  </view>
+</view>
